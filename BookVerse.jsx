@@ -16,7 +16,7 @@ function BookCard({ title, author, price, genre, viewMode }) {
       background: viewMode === "Grid"
         ? "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)"
         : "linear-gradient(90deg, #1a1a2e 0%, #16213e 100%)",
-      border: "1px solid #e94560",
+      border: "1px solid #e945d0",
       borderRadius: viewMode === "Grid" ? "16px" : "12px",
       padding: viewMode === "Grid" ? "24px" : "16px 24px",
       display: viewMode === "List" ? "flex" : "block",
@@ -42,7 +42,7 @@ function BookCard({ title, author, price, genre, viewMode }) {
 
       <div style={{ flex: 1 }}>
         <span style={{
-          background: "#e94560",
+          background: "#e945d0",
           color: "#fff",
           fontSize: "10px",
           fontWeight: "700",
@@ -77,13 +77,13 @@ function BookCard({ title, author, price, genre, viewMode }) {
         flexShrink: 0,
       }}>
         <span style={{
-          color: "#e94560",
+          color: "#e945d0",
           fontWeight: "700",
           fontSize: "18px",
           fontFamily: "monospace",
-        }}>₹{price}</span>
+        }}${price}</span>
         <button style={{
-          background: "#e94560",
+          background: "#e945d0",
           color: "#fff",
           border: "none",
           padding: "8px 16px",
@@ -140,7 +140,7 @@ export default function App() {
       {/* Header */}
       <header style={{
         background: "linear-gradient(135deg, #1a1a2e, #16213e)",
-        borderBottom: "2px solid #e94560",
+        borderBottom: "2px solid #e945d0",
         padding: "20px 40px",
         display: "flex",
         alignItems: "center",
@@ -156,22 +156,22 @@ export default function App() {
             color: "#fff",
             letterSpacing: "2px",
           }}>
-            📖 <span style={{ color: "#e94560" }}>Book</span>Verse
+             <span style={{ color: "#e945d0" }}>Book</span>Verse
           </h1>
           <p style={{ margin: "4px 0 0", color: "#a0a0b0", fontSize: "13px" }}>
-            Welcome Page — Featured Books
+            Welcome Page and Featured Books
           </p>
         </div>
 
         {/* Search Box — Controlled Component */}
         <input
           type="text"
-          placeholder="🔍 Search by title or author..."
+          placeholder="Search by title or author..."
           value={searchQuery}
           onChange={e => setSearchQuery(e.target.value)}
           style={{
             background: "#0f0f1a",
-            border: "1px solid #e94560",
+            border: "1px solid #e945d0",
             color: "#e2e2e2",
             padding: "10px 16px",
             borderRadius: "30px",
@@ -198,9 +198,9 @@ export default function App() {
             key={mode}
             onClick={() => setViewMode(mode)}
             style={{
-              background: viewMode === mode ? "#e94560" : "transparent",
+              background: viewMode === mode ? "#e945d0" : "transparent",
               color: viewMode === mode ? "#fff" : "#a0a0b0",
-              border: `1px solid ${viewMode === mode ? "#e94560" : "#3a3a5a"}`,
+              border: `1px solid ${viewMode === mode ? "#e945d0" : "#3a3a5a"}`,
               padding: "8px 20px",
               borderRadius: "8px",
               cursor: "pointer",
