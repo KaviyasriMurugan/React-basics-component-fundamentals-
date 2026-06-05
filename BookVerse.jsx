@@ -38,7 +38,7 @@ function BookCard({ title, author, price, genre, viewMode }) {
       <div style={{
         fontSize: viewMode === "Grid" ? "40px" : "32px",
         marginBottom: viewMode === "Grid" ? "12px" : "0",
-      }}>📚</div>
+      }}></div>
 
       <div style={{ flex: 1 }}>
         <span style={{
@@ -224,7 +224,7 @@ export default function App() {
           <BookList books={filteredBooks} viewMode={viewMode} />
         ) : (
           <div style={{ textAlign: "center", color: "#a0a0b0", padding: "60px", fontSize: "18px" }}>
-            😕 No books found for "<strong>{searchQuery}</strong>"
+             No books found for "<strong>{searchQuery}</strong>"
           </div>
         )}
       </main>
